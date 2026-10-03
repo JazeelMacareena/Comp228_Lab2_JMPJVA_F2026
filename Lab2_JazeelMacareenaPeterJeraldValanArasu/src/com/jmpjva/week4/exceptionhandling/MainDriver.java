@@ -21,9 +21,9 @@ public class MainDriver {
     	
         Scanner scanner = new Scanner(System.in);
         BankAccount[] accounts = new BankAccount[NUMBER_OF_ACCOUNTS];
-        System.out.println("----------------------------------------------");
-        System.out.println("       JAVA BANKING EXCEPTION HANDLING");
-        System.out.println("----------------------------------------------");
+        System.out.println("------------------------------------------------------------------");
+        System.out.println("                 JAVA BANKING EXCEPTION HANDLING");
+        System.out.println("------------------------------------------------------------------");
 
         for (int i = 0; i < NUMBER_OF_ACCOUNTS; i++) {
         	
@@ -33,10 +33,10 @@ public class MainDriver {
 
         for (int i = 0; i < accounts.length; i++) {
         	
-            System.out.println("----------------------------------------------");
+        	System.out.println("------------------------------------------------------------------");
             System.out.println("Transactions for Account " + (i + 1));
             System.out.println(accounts[i]);
-            System.out.println("----------------------------------------------");
+            System.out.println("------------------------------------------------------------------");
             processDeposit(scanner, accounts[i]);
             processWithdrawal(scanner, accounts[i]);
             System.out.println("Current account information:");
@@ -45,9 +45,9 @@ public class MainDriver {
             
         }
 
-        System.out.println("----------------------------------------------");
-        System.out.println("             FINAL ACCOUNT SUMMARY");
-        System.out.println("----------------------------------------------"); 
+        System.out.println("------------------------------------------------------------------");
+        System.out.println("                     FINAL ACCOUNT SUMMARY");
+        System.out.println("------------------------------------------------------------------");
         for (BankAccount account : accounts)
             System.out.println(account);
         scanner.close();
